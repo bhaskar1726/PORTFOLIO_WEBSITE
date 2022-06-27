@@ -1,0 +1,129 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+header{
+    height: 100vh;
+    width: 100vw;
+    background-image: linear-gradient(to left, #fff 90%, #c3f5ff 10%);
+}
+
+.navsection{
+    height: 20vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    background-image: linear-gradient(to top , #fff 80%, #c3f5ff 20%);
+}
+
+.logo{
+    width: 30%;
+    margin-left: 50px;
+    color: #fff;
+    background-image: linear-gradient(#8d98e3 40%, #854fee 60%);
+    padding-left: 80px;
+    box-sizing: border-box;
+}
+
+.logo h1 {
+    font-size: 1.2rem;
+    animation: leftToright 2s linear infinite;
+    animation-direction: alternate;
+}
+@keyframes leftToright{
+    from{ padding-left: 40px; }
+    to{ padding-right: 40px; }
+}
+
+nav{
+    width: 70%;
+    display: flex;
+    justify-content: space-around;
+}
+
+nav a {
+    background-color: bisque;
+    text-decoration: none;
+    color: #000;
+    font-size: 17px;
+    font-weight: 800;
+}
+
+nav a:first-child{
+    color: aqua;
+}
+
+/* nav a:before{
+    content: "";
+    position: absolute;
+    border-bottom: 2px solid #000;
+    height: 15px;
+}
+ a:hover:before {
+    width: 100%;
+} */
+
+main{
+    height: 80%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.rightside{
+    border-radius: 30% 70% 70% 30% / 30% 30% 70% 70% ;
+    background-color: #c3f5ff;
+    height: 400px;
+    width: 400px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.rightside img{
+    max-width: 150px;
+    height: auto;
+}
+
+.leftside{
+    color: #000;
+    text-transform: uppercase;
+}
+
+.leftside h3{
+    font-size: 35px;
+    margin-bottom: 20px;
+}
+
+/* .leftside h3::after{
+    content: "";
+    width: 450px;
+    height: 3px;
+    position: absolute;
+    top: 45%;
+    left: 15%;
+    background: #000;
+} */
+
+.leftside h1{
+    font-size: 60px;
+    margin-top: 20px;
+    margin-bottom: 25px;
+}
+
+.leftside h2{
+    margin-bottom: 25px;
+}
+.leftside a{
+    text-decoration: none;
+    background-color: #8d98e3;
+    margin: 15px;
+    padding: 8px;
+    border-radius: 10px;
+}
+
+.leftside a:hover{
+    background-color: #854fee;
+}
